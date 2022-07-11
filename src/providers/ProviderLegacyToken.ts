@@ -21,6 +21,9 @@ interface LegacyListToken {
     logoURI: string
     tags: Tag[]
     address: string
+    extensions?: {
+        coingeckoId?: string
+    }
 }
 
 interface LegacyList {
@@ -89,6 +92,9 @@ export class ProviderLegacyToken extends Provider {
                     tags: new Set<Tag>(token.tags),
                     verified: true,
                     holders: null,
+                    extensions: {
+                        coingeckoId: token.extensions?.coingeckoId,
+                    },
                 })
             }
         }

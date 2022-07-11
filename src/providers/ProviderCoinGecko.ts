@@ -174,6 +174,9 @@ export class ProviderCoinGecko extends Provider {
 
                     if (token) {
                         token.logoURI = response.value.data.image.large
+                        token.extensions = {
+                            coingeckoId: response.value.data.id,
+                        }
                         tokenMap.set(token)
                     }
                 } else {
