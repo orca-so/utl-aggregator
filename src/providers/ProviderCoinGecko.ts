@@ -160,9 +160,7 @@ export class ProviderCoinGecko extends Provider {
                 if (response.status === 'fulfilled') {
                     // CoinGecko returns mint address in all uppercase
                     // so mint address cannot be taken from response
-                    const mintAddress = response.value.config.url
-                        ?.split('/contract/')[1]
-                        .substring(0, 44)
+                    const mintAddress = response.value.data.platforms.solana
 
                     if (!mintAddress) {
                         throw new Error(
