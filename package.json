@@ -1,5 +1,5 @@
 {
-  "name": "@solflare-wallet/utl-aggregator",
+  "name": "@orca-so/utl-aggregator",
   "version": "0.0.6",
   "main": "lib/cjs/index.js",
   "module": "lib/esm/index.js",
