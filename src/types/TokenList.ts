@@ -6,5 +6,5 @@ export interface TokenList {
     keywords: string[]
     tags: object
     timestamp: string
-    tokens: Token | { tags: string[] }[]
+    tokens: Token[] | { tags: string[] }[]
 }
