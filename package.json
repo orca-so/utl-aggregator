@@ -1,6 +1,6 @@
 {
   "name": "@orca-so/utl-aggregator",
-  "version": "0.0.6",
+  "version": "0.0.1",
   "main": "lib/cjs/index.js",
   "module": "lib/esm/index.js",
   "author": "Solflare Developers <developers@solflare.com>",
