@@ -158,8 +158,6 @@ export class ProviderCoinGecko extends Provider {
             const responses = await Promise.allSettled(requests)
             for (const response of responses) {
                 if (response.status === 'fulfilled') {
-                    // CoinGecko returns mint address in all uppercase
-                    // so mint address cannot be taken from response
                     const mintAddress = response.value.data.platforms.solana
 
                     if (!mintAddress) {
