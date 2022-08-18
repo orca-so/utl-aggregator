@@ -15,4 +15,10 @@ export interface Token {
 
 export interface TokenExtensions {
     coingeckoId?: string
+    wrapper?: string
+}
+
+export enum TokenWrapper {
+    Serum = 'SRM',
+    Wormhole = 'WRM',
 }
